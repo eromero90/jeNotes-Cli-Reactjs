@@ -6,7 +6,7 @@ RUN THE PROJECT >
 - Run: npm install
 - Run: npm start
 
-App started on port 2020.
+App started on port 8080.
 
 
 Compile and Build tasks >
