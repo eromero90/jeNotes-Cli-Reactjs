@@ -1,0 +1,40 @@
+section.jeLanding {
+	& > article {
+		float: left;
+		width: 50%;
+		height: 165px;
+		box-sizing: border-box;
+		padding: 15px;
+		color: #fff;
+		text-align: center;
+
+		&:nth-child(1) > section {
+			background-color: $accent-color-note;
+		}
+
+		&:nth-child(2) > section {
+			background-color: $accent-color-todo;
+		}
+
+		& > section {
+			height: 100%;
+			width: 100%;
+			padding-top: 30px;
+			box-sizing: border-box;
+			@include user-select(none);
+			
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		& i {
+			font-size: 45px;
+		}
+
+		& div {
+			font-size: $font-xl;
+			padding-top: 10px;
+		}
+	}
+}

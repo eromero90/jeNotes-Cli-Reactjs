@@ -1,0 +1,30 @@
+$icon-sizes: 150px;
+
+section.jeNotes {
+	margin-top: 40px;
+	text-align: center;
+	padding-top: 25px;
+	//background-color: $cararra;
+
+	.fa-sticky-note-o {
+		font-size: 75px;
+		margin-top: 35px;
+		opacity: 1;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+	& > div {
+		border-radius: $icon-sizes;
+		width: $icon-sizes;
+		height: $icon-sizes;
+		border: 5px solid $light-color;
+		margin: 0 auto;
+		margin-bottom: 15px;
+		color: $light-color;
+	}
+
+	& > span {
+		font-size: $font-xxl;
+		color: $light-color;
+	}
+}

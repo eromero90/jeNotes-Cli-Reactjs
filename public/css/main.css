@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.jeNotesApp > section {
+  zoom: 1;
+  /* For IE 6/7 */ }
+  .jeNotesApp > section:after, .jeNotesApp > section:before {
+    content: "";
+    display: table; }
+  .jeNotesApp > section:after {
+    clear: both; }
+
+.jeNotesApp.notes > header > nav {
+  background-color: #F5AB35;
+  color: white; }
+
+.jeNotesApp.notes > header > section {
+  height: 0px;
+  padding-top: 0px;
+  background-color: #F5AB35; }
+
+.jeNotesApp.notes > header .fa-file-text-o {
+  opacity: 0; }
+
+.jeNotesApp.notes > header div:nth-child(1) {
+  opacity: 0; }
+
+.jeNotesApp.todos > header > nav {
+  background-color: #D2527F;
+  color: white; }
+
+.jeNotesApp.todos > header > section {
+  height: 0px;
+  padding-top: 0px;
+  background-color: #D2527F; }
+
+.jeNotesApp.todos > header .fa-file-text-o {
+  opacity: 0; }
+
+.jeNotesApp.todos > header div:nth-child(1) {
+  opacity: 0; }
+
+.jeNotesApp > header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none; }
+  .jeNotesApp > header > nav {
+    height: 35px;
+    width: 100%;
+    background-color: #6C7A89;
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+    font-size: 24px;
+    padding-top: 5px;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none; }
+  .jeNotesApp > header .fa-cog {
+    float: right;
+    font-size: 27px;
+    color: #fff;
+    margin-right: 10px; }
+  .jeNotesApp > header .fa-file-text-o {
+    font-size: 75px;
+    margin-top: 35px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; }
+  .jeNotesApp > header > section {
+    height: 275px;
+    background-color: #BDC3C7;
+    color: #fff;
+    padding-top: 25px;
+    text-align: center;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out, background-color 0.4s ease-in-out, padding-top 0.4s ease-in-out; }
+  .jeNotesApp > header div:nth-child(1) {
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+    margin: 0 auto;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; }
+  .jeNotesApp > header div:nth-child(2) {
+    font-size: 36px;
+    padding-top: 15px; }
+  .jeNotesApp > header div:nth-child(3) {
+    font-size: 14px;
+    padding-top: 15px; }
+
+.jeNotesApp > section {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+section.jeLanding {
+  margin-top: 340px; }
+
+section.jeNotes {
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 25px; }
+  section.jeNotes .fa-sticky-note-o {
+    font-size: 75px;
+    margin-top: 35px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; }
+  section.jeNotes > div {
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #DADFE1;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    color: #DADFE1; }
+  section.jeNotes > span {
+    font-size: 36px;
+    color: #DADFE1; }
+
+section.jeLanding > article {
+  float: left;
+  width: 50%;
+  height: 165px;
+  box-sizing: border-box;
+  padding: 15px;
+  color: #fff;
+  text-align: center; }
+  section.jeLanding > article:nth-child(1) > section {
+    background-color: #F5AB35; }
+  section.jeLanding > article:nth-child(2) > section {
+    background-color: #D2527F; }
+  section.jeLanding > article > section {
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none; }
+    section.jeLanding > article > section:hover {
+      cursor: pointer; }
+  section.jeLanding > article i {
+    font-size: 45px; }
+  section.jeLanding > article div {
+    font-size: 24px;
+    padding-top: 10px; }
+
+.jeNotesApp nav > .back-button {
+  opacity: 0;
+  float: left;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 19px;
+  width: 60px;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  transition: opacity 0.4s ease-in-out; }
+
+.jeNotesApp.notes nav > .back-button, .jeNotesApp.todos nav > .back-button {
+  opacity: 1; }
+  .jeNotesApp.notes nav > .back-button:hover, .jeNotesApp.todos nav > .back-button:hover {
+    cursor: pointer; }

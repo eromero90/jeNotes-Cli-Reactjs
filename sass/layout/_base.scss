@@ -1,0 +1,6 @@
+.jeNotesApp > section {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@extend %clear-fix;
+}
